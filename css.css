@@ -15,3 +15,30 @@ body, html {
     overflow:hidden;
     position:fixed;
 }
+
+
+
+.navBar ul ul {
+	display:none; /*Hide Sub Lists*/
+}
+.navBar ul li:hover > ul {
+	display:block; /*Show Sub Lists*/
+}
+.navBar ul { /*List Styling*/
+	padding: 0px 10px 1px 10px;
+	border-radius: 10px;
+	list-style: none;
+	position: relative;
+	display: inline-block;
+	background-color: #888888;
+}
+.navBar ul li { float:top;}
+.navBar ul li a {padding: 5px 10px 5px 10px;display: block;color:#000000;}
+.navBar ul li:hover {background-color: #999999;padding-bottom: 1px;}
+.navBar ul li:hover a {color: #ffffff;}
+.navBar ul li:hover ul {margin-left:1px;margin-right:1px;padding:0px;}
+.navBar ul li:hover ul li {float:none;display:block;}
+.navBar ul li:hover ul li a{color: #000000;min-width:150px;}
+.navBar ul li:hover ul li a:hover {color:#fff;}
+.navBar ul li {position:relative;}
+.navBar ul li ul {position absolute; top:0px; left:0px;}
